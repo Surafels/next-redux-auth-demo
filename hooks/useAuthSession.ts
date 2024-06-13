@@ -49,38 +49,3 @@ const useAuthSession = () => {
 };
 
 export default useAuthSession;
-
-// import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-// import { ReactNode } from 'react';
-
-// interface AuthState {
-//   username: ReactNode;
-//   user: any;
-//   token: string | null;
-// }
-
-// const initialState: AuthState = {
-//     user: null,
-//     token: null,
-//     username: undefined
-// };
-
-// const authSlice = createSlice({
-//   name: 'auth',
-//   initialState,
-//   reducers: {
-//     setUser: (state, action: PayloadAction<any>) => {
-//       state.user = action.payload;
-//     },
-//     setToken: (state, action: PayloadAction<string | null>) => {
-//       state.token = action.payload;
-//     },
-//     clearAuth: (state) => {
-//       state.user = null;
-//       state.token = null;
-//     },
-//   },
-// });
-
-// export const { setUser, setToken, clearAuth } = authSlice.actions;
-// export default authSlice.reducer;
